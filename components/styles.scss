@@ -57,12 +57,8 @@
 // Style guide: navigation
 
 @import 'navigation/breadcrumb/breadcrumb';
-@import 'navigation/more-link/more-link';
-@import 'navigation/nav-menu/nav-menu';
 @import 'navigation/navbar/navbar';
-@import 'navigation/pager/pager';
 @import 'navigation/skip-link/skip-link';
-@import 'navigation/tabs/tabs';
 
 // Common
 //
@@ -74,12 +70,7 @@
 // Style guide: common
 
 @import 'common/box/box';
-@import 'common/comment/comment';
-// This file is @import'ed by base/grouping, so we don't import it again.
-// @import 'common/divider/divider';
-@import 'common/highlight-mark/highlight-mark';
 @import 'common/inline-links/inline-links';
-@import 'common/messages/messages';
 
 
 // Forms
@@ -91,16 +82,9 @@
 //
 // Style guide: forms
 
-@import 'forms/autocomplete/autocomplete';
 // This file is @import'ed by base/forms, so we don't import it again.
 // @import 'forms/button/button';
-@import 'forms/collapsible-fieldset/collapsible-fieldset';
-@import 'forms/form-item/form-item';
-@import 'forms/form-table/form-table';
 @import 'forms/progress-bar/progress-bar';
-@import 'forms/progress-throbber/progress-throbber';
-@import 'forms/resizable-textarea/resizable-textarea';
-@import 'forms/table-drag/table-drag';
 
 // Utility
 //
