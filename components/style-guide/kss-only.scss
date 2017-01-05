@@ -20,3 +20,7 @@
     @include zen-apply-gutter-padding();
   }
 }
+
+#kss-node .kss-section {
+  max-width: none;
+}
