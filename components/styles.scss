@@ -1,0 +1,118 @@
+//
+// The major stylesheet for this project.
+//
+// We categorize our components by creating headings in this file. See the
+// description on the style guide home page for more information.
+
+
+// Colors and Sass
+//
+// Documentation for colors and Sass mixins and variables.
+//
+// Weight: -1
+//
+// Style guide: sass
+@import 'init';
+
+// Defaults
+//
+// These are the default base styles applied to HTML elements.
+//
+// Component classes can override these styles, but if no class applies a style
+// to an HTML element, these styles will be the ones displayed.
+//
+// Style guide: base
+
+// Ensure fonts get loaded first to minimize front-end performance impact.
+@import 'base/fonts';
+@import 'base/normalize';
+
+// Layouts
+//
+// The layout styling for major parts of the page that are included with the
+// theme.
+//
+// Style guide: layouts
+@import 'layouts/layout-3col/layout-3col';
+@import 'layouts/layout-center/layout-center';
+@import 'layouts/layout-swap/layout-swap';
+
+// Global
+//
+// Global components are design components that appear on all pages of the site.
+//
+// Weight: 1
+//
+// Style guide: global
+
+@import 'global/header/header';
+
+// Navigation
+//
+// Navigation components are specialized design components that are used for
+// page navigation.
+//
+// Weight: 1
+//
+// Style guide: navigation
+
+@import 'navigation/breadcrumb/breadcrumb';
+@import 'navigation/more-link/more-link';
+@import 'navigation/nav-menu/nav-menu';
+@import 'navigation/navbar/navbar';
+@import 'navigation/pager/pager';
+@import 'navigation/skip-link/skip-link';
+@import 'navigation/tabs/tabs';
+
+// Common
+//
+// Design components are reusable designs that can be applied using just the CSS
+// class names specified in the component.
+//
+// Weight: 2
+//
+// Style guide: common
+
+@import 'common/box/box';
+@import 'common/comment/comment';
+// This file is @import'ed by base/grouping, so we don't import it again.
+// @import 'common/divider/divider';
+@import 'common/highlight-mark/highlight-mark';
+@import 'common/inline-links/inline-links';
+@import 'common/messages/messages';
+
+
+// Forms
+//
+// Form components are specialized design components that are applied to forms
+// or form elements.
+//
+// Weight: 2
+//
+// Style guide: forms
+
+@import 'forms/autocomplete/autocomplete';
+// This file is @import'ed by base/forms, so we don't import it again.
+// @import 'forms/button/button';
+@import 'forms/collapsible-fieldset/collapsible-fieldset';
+@import 'forms/form-item/form-item';
+@import 'forms/form-table/form-table';
+@import 'forms/progress-bar/progress-bar';
+@import 'forms/progress-throbber/progress-throbber';
+@import 'forms/resizable-textarea/resizable-textarea';
+@import 'forms/table-drag/table-drag';
+
+// Utility
+//
+// Utility components are specialized components that are often used to easily
+// fix complex CSS problems.
+//
+// Weight: 2
+//
+// Style guide: utility
+
+@import 'utility/clearfix/clearfix';
+@import 'utility/inline-sibling/inline-sibling';
+@import 'utility/print-none/print-none';
+@import 'utility/responsive-video/responsive-video';
+@import 'utility/visually-hidden/visually-hidden';

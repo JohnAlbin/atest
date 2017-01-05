@@ -1,0 +1,16 @@
+# Exclude developer tools' files.
+  # JetBrains
+.idea
+  # CodeKit
+*.codekit
+  # Various application temp files
+*.LCK
+*.TMP
+*~
+
+# Exclude hidden OS files.
+.DS_Store
+._*
+Thumbs.db
+
+node_modules
