@@ -1,5 +1,5 @@
 [id^='kssref-layouts-'] [class^='layout-'][class*='__'] {
-  outline: 1px dotted #999999;
+  outline: 1px dotted #d6d6d6;
 }
 
 #kssref-layouts-layout-3column .kss-modifier__example {
