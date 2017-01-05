@@ -17,3 +17,7 @@
     padding-right: 12px;
   }
 }
+
+#kss-node .kss-section {
+  max-width: none;
+}

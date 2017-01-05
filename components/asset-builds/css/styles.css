@@ -3,12 +3,14 @@
 }
 
 html {
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: Roboto, Verdana, Tahoma, "DejaVu Sans", sans-serif;
   font-size: 100%;
   line-height: 1.5em;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   min-height: 100%;
+  color: #222;
+  background-color: #fff;
 }
 
 @media print {
@@ -33,7 +35,7 @@ section {
 
 h1,
 .header__site-name {
-  font-size: 2rem;
+  font-size: 2.875rem;
   line-height: 3rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -47,7 +49,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 2.25rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -146,10 +148,16 @@ samp {
 a {
   color: #e92a39;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
 }
 
 :visited {
   color: #e92a39;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
 }
 
 a:active {
@@ -265,7 +273,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: Roboto, Verdana, Tahoma, "DejaVu Sans", sans-serif;
   line-height: 1.5rem;
   font-size: 100%;
   box-sizing: border-box;
@@ -1226,22 +1234,65 @@ samp {
   }
 }
 
-.box {
+.header-area__heading {
+  font-size: 130px;
+  line-height: 125px;
+  font-weight: bold;
+  letter-spacing: .2px;
+  text-transform: uppercase;
+}
+
+.header-area__image {
+  display: none;
+  float: right;
+  top: 0;
+  right: 0;
+  width: 510px;
+  margin-left: 47px;
+}
+
+.header-area__text {
+  margin-left: 91px;
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.header-area--with-image {
+  min-height: 900px;
+}
+
+.header-area--with-image .header-area__heading {
+  position: relative;
+  z-index: 1;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+}
+
+.header-area--with-image .header-area__image {
+  display: block;
+}
+
+.header-area--with-image .header-area__text {
+  clear: left;
+}
+
+.infobox {
   margin-bottom: 1.5rem;
-  border: 5px solid #d6d6d6;
-  padding: 1em;
+  width: 600px;
+  height: 494px;
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 16px 31px 44px 90px;
 }
 
-.box__title {
+.infobox__title {
+  font-size: 64px;
+  line-height: 110px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   margin: 0;
-}
-
-.box:focus, .box:hover, .box.is-focus, .box--is-focus {
-  border-color: #222;
-}
-
-.box--highlight {
-  border-color: #e92a39;
 }
 
 .inline-links,
