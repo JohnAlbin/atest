@@ -81,6 +81,7 @@ options.styleGuide = {
   // The CSS and JS files found in the options.theme.css and the
   // options.theme.js directories will automatically be added.
   css: [
+    'https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i'
   ],
   js: [
     options.theme.vendorURL + 'jquery/dist/jquery.slim.min.js'
