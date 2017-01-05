@@ -1,0 +1,11 @@
+<article class="header-area {{ modifier_class }}">
+  <h1 class="header-area__heading">{{ heading }}</h1>
+  {% if image %}
+    <div class="header-area__image">
+      <img src="{{ image }}" alt="{{ image_alt }}">
+    </div>
+  {% endif %}
+  <div class="header-area__text">
+    {{ text }}
+  </div>
+</article>
