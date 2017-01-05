@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: Roboto, Verdana, Tahoma, "DejaVu Sans", sans-serif;
   font-size: 100%;
@@ -328,11 +332,16 @@ button,
 [type='reset'],
 [type='submit'] {
   display: inline-block;
-  padding: 2px 6px;
-  line-height: inherit;
+  min-width: 283px;
+  padding: 17px 6px;
+  border: 1px solid #e92a39;
+  margin: 0 12px 12px 0;
+  font-size: 17px;
+  line-height: 23px;
   text-decoration: none;
   cursor: pointer;
-  color: #222;
+  color: #fff;
+  background-color: #e92a39;
 }
 
 .button::-moz-focus-inner,
@@ -366,6 +375,16 @@ button:active,
 [type='submit']:focus,
 [type='submit']:active {
   text-decoration: none;
+  color: #fff;
+}
+
+.button--secondary {
+  color: #222;
+  background-color: #fff;
+  border-color: #222;
+}
+
+.button--secondary:hover, .button--secondary:focus, .button--secondary:active {
   color: #222;
 }
 
