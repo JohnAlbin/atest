@@ -45,8 +45,11 @@ $chroma: add-colors('functional', (
 
   body-bg:                'text-bg',
 
-  button:                 'text',
+  button:                 'white',
+  button-bg:              'red',
   button-disabled:        'grey-light',
+  button-secondary:       'text',
+  button-secondary-bg:    'white',
 
   footer-fat-bg:          #292929, // 96% opaque black
 

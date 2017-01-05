@@ -7,6 +7,7 @@
 //
 // :hover  - Hover styling.
 // :active - Depressed button styling.
+// .button--secondary - Secondary button.
 //
 // Markup: button.twig
 //
@@ -36,15 +37,17 @@ button,
   @extend %button--disabled;
   // Some styles don't apply to <a> links since they are inline elements by default.
   display: inline-block;
-  padding: 2px 6px;
-  // Address Firefox 4+ setting `line-height` on `input` using `!important` in
-  // the UA stylesheet. And prevent its "line-height: normal" rule below from
-  // breaking the "appearance: button" styling on the input elements.
-  line-height: inherit;
+  min-width: 283px;
+  padding: 17px 6px;
+  border: 1px solid color(button-bg);
+  margin: 0 12px 12px 0;
+  font-size: 17px;
+  line-height: 23px;
   text-decoration: none;
   // Improve usability and consistency of cursor style between image-type `input` and others.
   cursor: pointer;
   color: color(button);
+  background-color: color(button-bg);
 
   // sass-lint:disable no-vendor-prefixes
   // Remove the inner border and padding in Firefox.
@@ -71,8 +74,16 @@ button,
 // Add button variations here.
 .button,
 %button {
-  &--variant-name {
-    // Add styles here.
+  &--secondary {
+    color: color(button-secondary);
+    background-color: color(button-secondary-bg);
+    border-color: color('black');
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: color(button-secondary);
+    }
   }
 }
 

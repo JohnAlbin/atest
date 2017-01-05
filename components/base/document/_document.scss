@@ -6,6 +6,11 @@
 //
 // Style guide: base.document
 
+// Use the saner border-box model for all elements.
+* {
+  box-sizing: border-box;
+}
+
 html {
   // Change the default font family in all browsers (opinionated).
   @include typeface(body);
