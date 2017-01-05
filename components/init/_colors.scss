@@ -15,35 +15,39 @@
 $chroma: define-default-color-scheme('branding', 'The site\'s main colors. Can be used to define colors in other color schemes.');
 
 $chroma: add-colors((
-  black:                  #000,
-  grey-dark:              ('black' lighten 40%), // #666
-  'grey':                 ('black' lighten 60%), // #999
-  grey-light:             ('black' lighten 80%), // #ccc
-  grey-extra-light:       ('black' lighten 93.33%), // #eee
-  white:                  #fff,
+  red:                    #e92a39,
+  red-dark:               #c61826,
+  maroon:                 #6d140e,
+  maroon-dark:            #59100a,
+  green:                  #0eb992,
+  green-dark:             #009d79,
 
-  blue:                   #0072b9,
-  red:                    #c00,
-  yellow:                 #fd0,
+  black:                  #222,
+  grey-dark:              #2a2a2a,
+  //'grey':                 ('black' lighten 60%), // #999
+  grey-light:             #d6d6d6,
+  grey-extra-light:       #f3f3f3,
+  white:                  #fff,
 ));
 
 // Define color names for functional uses.
 $chroma: define-color-scheme('functional', 'Colors used by functional parts of the design.');
 $chroma: add-colors('functional', (
+  'grey': 'grey-light',
   // Colors used in the main content area.
   text:                   'black',
   text-bg:                'white',
 
-  link:                   'blue',
-  link-visited:           ('blue' darken 20%),
-  link-active:            'red',
+  link:                   'red',
+  link-visited:           'red',
+  link-active:            'red-dark',
 
   border:                 'grey-light',
 
   autocomplete:           'text',
   autocomplete-bg:        'text-bg',
   autocomplete-select:    'white',
-  autocomplete-select-bg: 'blue',
+  autocomplete-select-bg: 'red',
 
   body-bg:                'text-bg',
 
@@ -53,14 +57,16 @@ $chroma: add-colors('functional', (
   fieldset-summary:       'grey',
   form-error:             'red',
 
+  footer-fat-bg:          #292929, // 96% opaque black
+
   mark-highlight:         'red',
-  mark-bg:                'yellow',
+  mark-bg:                yellow,
 
   menu-active:            'text',
 
-  preview-bg:             ('yellow' lighten 43%),
+  preview-bg:             (yellow lighten 43%),
 
-  progress-bar:           'blue',
+  progress-bar:           'red',
   progress-bar-bg:        'grey-light',
   progress-bar-border:    'grey-dark',
 
@@ -72,12 +78,12 @@ $chroma: add-colors('functional', (
   skip-link:              'white',
   skip-link-bg:           'grey-dark',
 
-  status:                 'blue',
+  status:                 blue,
   status-bg:              (status lighten 62%),
   status-highlight:       text,
   warning:                text,
-  warning-bg:             ('yellow' lighten 45%),
-  warning-border:         'yellow',
+  warning-bg:             (yellow lighten 45%),
+  warning-border:         yellow,
   error:                  'red',
   error-bg:               (error lighten 57%),
 
@@ -88,8 +94,8 @@ $chroma: add-colors('functional', (
   tab-bg:                 ('grey-light' lighten 6.66%),
   tab-secondary:          'grey-dark',
 
-  table-drag:             ('yellow' lighten 43%),
-  table-select:           ('yellow' lighten 47%),
+  table-drag:             (yellow lighten 43%),
+  table-select:           (yellow lighten 47%),
 
   watermark:              'grey-extra-light',
 ));
