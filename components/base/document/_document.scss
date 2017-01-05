@@ -18,4 +18,6 @@ html {
   // On short pages, we want any background gradients to fill the entire height
   // of the browser.
   min-height: 100%;
+  color: color(text);
+  background-color: color(text-bg);
 }

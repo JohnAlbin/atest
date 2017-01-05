@@ -18,7 +18,7 @@
 // Possible keys: chrome, edge, firefox, ie, opera, safari, '*'
 $support-for: (
   // IE 9-11
-  ie:  9,
+  ie:  11,
   // The last 4 versions of all other browsers.
   '*': -4,
 );
@@ -41,9 +41,9 @@ $base-line-height:  24px;
 
 // The font sizes in our type hierarchy as tee shirt sizes.
 $font-size: (
-  xxl:              32px,
+  xxl:              46px,
   xl:               24px,
-  l:                20px,
+  l:                18px,
   m:                $base-font-size,
   s:                14px,
   xs:               10px
@@ -72,9 +72,7 @@ $georgia:         Georgia, 'Times New Roman', 'DejaVu Serif', serif;
 
 // Sans-serif font stacks.
 $verdana:         Verdana, Tahoma, 'DejaVu Sans', sans-serif;
-$tahoma:          Tahoma, Verdana, 'DejaVu Sans', sans-serif;
-$helvetica:       Helvetica, Arial, 'Nimbus Sans L', sans-serif;
-$arial:           Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+$roboto:          Roboto, $verdana;
 $impact:          Impact, 'Arial Narrow', Helvetica, sans-serif;
 
 // Monospace font stacks.
@@ -86,7 +84,7 @@ $menlo:           Menlo, 'DejaVu Sans Mono', 'Ubuntu Mono', Courier, 'Courier Ne
 // typeface() mixin.
 $typefaces: (
   body: (
-    font-family: $verdana,
+    font-family: $roboto,
   ),
   monospace: (
     font-family: $menlo,
