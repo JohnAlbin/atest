@@ -83,6 +83,7 @@ options.styleGuide = {
   css: [
   ],
   js: [
+    options.theme.vendorURL + 'jquery/dist/jquery.slim.min.js'
   ],
 
   homepage: 'homepage.md',
