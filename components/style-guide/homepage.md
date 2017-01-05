@@ -8,26 +8,26 @@ Design components are reusable designs that can be applied using just the CSS cl
 
 <dl>
 <dt>**Defaults**</dt>
-<dd>`sass/base` — The default “base” components apply to HTML elements. Since all of the rulesets in this class of styles are HTML elements, the styles apply automatically.</dd>
+<dd>`components/base` — The default “base” components apply to HTML elements. Since all of the rulesets in this class of styles are HTML elements, the styles apply automatically.</dd>
 <dt>**Layouts**</dt>
-<dd>`sass/layouts` — Layout components position major chunks of the page. They just apply positioning, no other styles.</dd>
+<dd>`components/layouts` — Layout components position major chunks of the page. They just apply positioning, no other styles.</dd>
 <dt>**Global**</dt>
-<dd>`sass/global` — Global components are design components that appear on all pages of the site.</dd>
+<dd>`components/global` — Global components are design components that appear on all pages of the site.</dd>
 <dt>**Navigation**</dt>
-<dd>`sass/navigation` — Navigation components are specialized design components that are applied to website navigation.</dd>
+<dd>`components/navigation` — Navigation components are specialized design components that are applied to website navigation.</dd>
 <dt>**Common**</dt>
-<dd>`sass/common` — Miscellaneous components are grouped together, but feel free to further categorize these.</dd>
+<dd>`components/common` — Miscellaneous components are grouped together, but feel free to further categorize these.</dd>
 <dt>**Forms**</dt>
-<dd>`sass/forms` — Form components are specialized design components that are applied to forms or form elements.</dd>
+<dd>`components/forms` — Form components are specialized design components that are applied to forms or form elements.</dd>
 <dt>**Utility**</dt>
-<dd>`sass/utility` — Utility components are specialized components that are often used to easily fix complex CSS problems.</dd>
+<dd>`components/utility` — Utility components are specialized components that are often used to easily fix complex CSS problems.</dd>
 </dl>
 
 In addition to the components, our component library also contains these folders:
 
 <dl>
 <dt>**Colors and Sass**</dt>
-<dd>`sass/init` — This Sass documents the colors used throughout the site and various Sass variables, functions and mixins. It also initializes everything we need for all other Sass files: variables, 3rd-party libraries, custom mixins and custom functions.</dd>
+<dd>`components/init` — This Sass documents the colors used throughout the site and various Sass variables, functions and mixins. It also initializes everything we need for all other Sass files: variables, 3rd-party libraries, custom mixins and custom functions.</dd>
 <dt>**Style guide helper files**</dt>
-<dd>`sass/style-guide` — files needed to build this automated style guide; includes some CSS overrides for the default KSS style guide</dd>
+<dd>`components/style-guide` — files needed to build this automated style guide; includes some CSS overrides for the default KSS style guide</dd>
 </dl>
