@@ -1,9 +1,9 @@
-<ul class="navbar clearfix">
-  <li class="navbar__item"><a href="#">Home</a></li>
-  <li class="navbar__item"><a href="#">Blandit Jugis</a></li>
-  <li class="navbar__item"><a href="#">Causa Diam</a></li>
-  <li class="navbar__item"><a href="#">Abigo Caecus</a></li>
-  <li class="navbar__item"><a href="#">Ibidem Sudo</a></li>
-  <li class="navbar__item"><a href="#">Luctus Luptatum</a></li>
-  <li class="navbar__item"><a href="#">Ut</a></li>
-</ul>
+<div class="navbar {{ modifier_class }}">
+  {% if modifier_class == 'navbar--mobile' %}
+    <img src="/components/navigation/navbar/mockup-mobile.png" width="195" height="52" />
+  {% elseif modifier_class == 'navbar--mobile is-active' %}
+    <img src="/components/navigation/navbar/mockup-mobile-active.png" width="375" height="797" />
+  {% else %}
+    <img src="/components/navigation/navbar/mockup.png" width="938" height="208" />
+  {% endif %}
+</div>
