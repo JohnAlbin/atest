@@ -1161,8 +1161,19 @@ samp {
 }
 
 .breadcrumb__list {
-  margin: 0;
   padding: 0;
+}
+
+@media (min-width: 777px) {
+  .breadcrumb__list {
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
+    -webkit-transform-origin: left top;
+        -ms-transform-origin: left top;
+            transform-origin: left top;
+    margin: 280px 0 -1rem;
+  }
 }
 
 .breadcrumb__item {
