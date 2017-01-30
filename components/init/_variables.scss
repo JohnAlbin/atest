@@ -2,7 +2,7 @@
 //
 // Set variables for this site before a library sets its !default value.
 //
-// Style guide: sass.variables
+// Style guide: code.variables
 
 
 // Browser support
@@ -12,7 +12,7 @@
 // function and the `$support-for` variable are documented on the [support-for
 // homepage](https://github.com/JohnAlbin/support-for).
 //
-// Style guide: sass.variables.support-for
+// Style guide: code.variables.support-for
 
 // Support the same browsers as normalize.css v3.
 // Possible keys: chrome, edge, firefox, ie, opera, safari, '*'
@@ -31,7 +31,7 @@ $support-for: (
 // These variable and mixins are documented on the [Typey
 // homepage](https://github.com/jptaranto/typey).
 //
-// Style guide: sass.variables.typey
+// Style guide: code.variables.typey
 
 // The font size set on the root html element.
 $base-font-size:    16px;
@@ -115,7 +115,7 @@ $rem-fallback:      false;
 // available in the [Breakpoint wiki
 // pages](https://github.com/at-import/breakpoint/wiki/Respond-To).
 //
-// Style guide: sass.variables.breakpoints
+// Style guide: code.variables.breakpoints
 
 @include add-breakpoint(xxxs, (333px, 'no-query' true));
 @include add-breakpoint(xxs,  (444px, 'no-query' true));
@@ -139,7 +139,7 @@ $rem-fallback:      false;
 // Note: if you are more comfortable using another grid system, you can easily
 // remove Zen Grids and its layouts.
 //
-// Style guide: sass.variables.zen-grids
+// Style guide: code.variables.zen-grids
 
 // These are needed for all breakpoints on all layouts.
 $zen-auto-include-grid-item-base: false;
@@ -178,7 +178,7 @@ $zen-rtl-selector: '[dir="rtl"]';
 //
 // weight: 10
 //
-// Style guide: sass.variables.misc
+// Style guide: code.variables.misc
 
 $indent-amount: 2 * $base-font-size;
 

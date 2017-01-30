@@ -12,7 +12,7 @@
 //
 // Weight: -1
 //
-// Style guide: sass.init
+// Style guide: code.init
 
 
 // The following Sass functions/mixins are required to generate some variables'
@@ -35,7 +35,7 @@
 //
 // Additional pre-built libraries can be found on the [Sache website](http://www.sache.in/).
 //
-// Style guide: sass.modules
+// Style guide: code.modules
 
 // Add Chroma to manage colors.
 @import 'chroma';
@@ -54,7 +54,7 @@
 //
 // Weight: 1
 //
-// Style guide: sass.mixins
+// Style guide: code.mixins
 @import 'init/clearfix/clearfix';
 @import 'init/rtl/rtl';
 @import 'init/visually-hidden/visually-hidden';
@@ -65,5 +65,5 @@
 //
 // Weight: 1
 //
-// Style guide: sass.functions
+// Style guide: code.functions
 @import 'init/image-url/image-url';

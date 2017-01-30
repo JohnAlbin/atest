@@ -1314,25 +1314,6 @@ samp {
   margin: 0;
 }
 
-.inline-links,
-.inline.links {
-  padding: 0;
-}
-
-.inline-links__item,
-.inline.links li {
-  display: inline;
-  list-style-type: none;
-  padding: 0 1em 0 0;
-}
-
-[dir="rtl"] .inline-links__item,
-[dir="rtl"] .inline.links li,
-.inline.links [dir="rtl"] li {
-  display: inline-block;
-  padding: 0 0 0 1em;
-}
-
 .progress-bar,
 .progress {
   font-weight: bold;
@@ -1481,3 +1462,5 @@ span.field-label {
   width: auto;
   overflow: visible;
 }
+
+/*# sourceMappingURL=styles.css.map */

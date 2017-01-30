@@ -11,7 +11,7 @@ $include-rtl: true !default;
 //
 // $selector = '[dir="rtl"]' - The RTL parent selector.
 //
-// Style guide: sass.mixins.rtl
+// Style guide: code.mixins.rtl
 @mixin rtl($selector: '[dir="rtl"]') {
   @if $include-rtl {
     @if & {

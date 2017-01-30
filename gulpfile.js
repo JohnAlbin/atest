@@ -26,7 +26,7 @@ options.rootPath = {
 };
 
 options.theme = {
-  name       : 'atest',
+  name       : 'uh-style',
   root       : options.rootPath.theme,
   components : options.rootPath.theme + 'components/',
   build      : options.rootPath.theme + 'components/asset-builds/',
@@ -88,7 +88,7 @@ options.styleGuide = {
   ],
 
   homepage: 'homepage.md',
-  title: 'A Test Style Guide'
+  title: 'Gestaltungsrichtlinie'
 };
 
 // Define the paths to the JS files to lint.

@@ -1,5 +1,5 @@
 {
-  "name": "a-test",
+  "name": "uh-style-guide",
   "author": "John Albin Wilkins",
   "description": "The node.js requirements to build this project.",
   "version": "1.0.0",
@@ -29,7 +29,7 @@
     "gulp-uglify": "^1.5.4",
     "kss": "^3.0.0-beta.17",
     "support-for": "^1.0.6",
-    "typey": "^1.0.0",
+    "typey": "1.0.3",
     "zen-grids": "^2.0.3"
   },
   "engines": {
