@@ -83,3 +83,20 @@ body {
 #kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * {
   display: none;
 }
+
+.kss-style a {
+  &:link,
+  &:visited,
+  &:hover,
+  &:focus {
+    color: #e92a39;
+  }
+}
+
+#kss-node .kss-title__permalink {
+  &:hover,
+  &:focus,
+  &:active {
+    color: #e92a39;
+  }
+}
