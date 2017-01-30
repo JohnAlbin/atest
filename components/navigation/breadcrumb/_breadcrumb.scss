@@ -22,8 +22,13 @@
   }
 
   &__list {
-    margin: 0;
     padding: 0;
+
+    @include respond-to(m) {
+      transform: rotate(270deg);
+      transform-origin: left top;
+      margin: 280px 0 -1rem;
+    }
   }
 
   &__item {
