@@ -51,10 +51,11 @@ body {
 
 #kss-node .kss-header {
   margin: 0;
-  background-image: url("//www.uni-heidelberg.de/md/zentral/startseite/logo_neu_204x107.jpg");
+  background-image: url("../../global/header/logo.png");
+  background-size: 125px 66px;
   background-repeat: no-repeat;
   background-position: center 10px;
-  padding-top: 127px;
+  padding-top: 86px;
   text-align: center;
 }
 
