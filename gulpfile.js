@@ -88,7 +88,7 @@ options.styleGuide = {
   ],
 
   homepage: 'homepage.md',
-  title: 'Gestaltungsrichtlinie'
+  title: 'Universität Heidelberg Gestaltungsrichtlinie'
 };
 
 // Define the paths to the JS files to lint.
