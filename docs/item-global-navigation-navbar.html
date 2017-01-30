@@ -123,6 +123,7 @@
         
                   <div class="kss-description">
             <p>A simple method to get navigation links to appear in one line.</p>
+<p>@TODO: Replace this image mock-up with an HTML/CSS/JS implementation.</p>
 
           </div>
         
@@ -130,37 +131,60 @@
 
               <div class="kss-modifier__wrapper">
           <div class="kss-modifier__heading kss-style">
-            Example          </div>
+            Examples          </div>
 
+                      <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
           
           <div class="kss-modifier__example">
-            <ul class="navbar clearfix">
-  <li class="navbar__item"><a href="#">Home</a></li>
-  <li class="navbar__item"><a href="#">Blandit Jugis</a></li>
-  <li class="navbar__item"><a href="#">Causa Diam</a></li>
-  <li class="navbar__item"><a href="#">Abigo Caecus</a></li>
-  <li class="navbar__item"><a href="#">Ibidem Sudo</a></li>
-  <li class="navbar__item"><a href="#">Luctus Luptatum</a></li>
-  <li class="navbar__item"><a href="#">Ut</a></li>
-</ul>
+            <div class="navbar ">
+      <img src="/components/navigation/navbar/mockup.png" width="938" height="208" />
+  </div>
 
             <div class="kss-modifier__example-footer"></div>
           </div>
 
+                      <div class="kss-modifier__name kss-style">
+              .navbar--mobile
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Mobile version (closed)
+            </div>
+            <div class="kss-modifier__example">
+              <div class="navbar navbar--mobile">
+      <img src="/components/navigation/navbar/mockup-mobile.png" width="195" height="52" />
+  </div>
+
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+                      <div class="kss-modifier__name kss-style">
+              .navbar--mobile.is-active
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Mobile version (open)
+            </div>
+            <div class="kss-modifier__example">
+              <div class="navbar navbar--mobile is-active">
+      <img src="/components/navigation/navbar/mockup-mobile-active.png" width="375" height="797" />
+  </div>
+
+              <div class="kss-modifier__example-footer"></div>
+            </div>
                   </div>
                   <details class="kss-markup kss-style">
             <summary>
                               Markup: <code>navigation/navbar/navbar.twig</code>
                           </summary>
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;navbar clearfix&quot;&gt;
-  &lt;li class=&quot;navbar__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;navbar__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Blandit Jugis&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;navbar__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Causa Diam&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;navbar__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Abigo Caecus&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;navbar__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Ibidem Sudo&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;navbar__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Luctus Luptatum&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;navbar__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Ut&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;navbar {{ modifier_class }}&quot;&gt;
+  {% if modifier_class == &#039;navbar--mobile&#039; %}
+    &lt;img src=&quot;/components/navigation/navbar/mockup-mobile.png&quot; width=&quot;195&quot; height=&quot;52&quot; /&gt;
+  {% elseif modifier_class == &#039;navbar--mobile is-active&#039; %}
+    &lt;img src=&quot;/components/navigation/navbar/mockup-mobile-active.png&quot; width=&quot;375&quot; height=&quot;797&quot; /&gt;
+  {% else %}
+    &lt;img src=&quot;/components/navigation/navbar/mockup.png&quot; width=&quot;938&quot; height=&quot;208&quot; /&gt;
+  {% endif %}
+&lt;/div&gt;
 </code></pre>
           </details>
               
