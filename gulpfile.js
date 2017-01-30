@@ -38,6 +38,9 @@ options.theme = {
 options.theme.cssURL = path.relative(options.rootPath.styleGuide, options.theme.css) + '/';
 options.theme.jsURL = path.relative(options.rootPath.styleGuide, options.theme.js) + '/';
 options.theme.vendorURL = path.relative(options.rootPath.styleGuide, options.theme.vendor) + '/';
+options.theme.cssURL = path.relative(__dirname, options.theme.css) + '/';
+options.theme.jsURL = path.relative(__dirname, options.theme.js) + '/';
+options.theme.vendorURL = path.relative(__dirname, options.theme.vendor) + '/';
 
 // Set the URL used to access the Drupal website under development. This will
 // allow Browser Sync to serve the website and update CSS changes on the fly.
