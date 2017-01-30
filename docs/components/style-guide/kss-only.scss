@@ -43,8 +43,11 @@ body {
 #kss-node .kss-sidebar {
   background: none;
   box-shadow: none;
-  margin-top: -10px;
-  border-top: 10px solid #b5152b;
+
+  @media screen and (min-width: 769px) {
+    margin-top: -10px;
+    border-top: 10px solid #b5152b;
+  }
 }
 
 #kss-node .kss-header {
@@ -53,6 +56,7 @@ body {
   background-repeat: no-repeat;
   background-position: center 10px;
   padding-top: 127px;
+  text-align: center;
 }
 
 
