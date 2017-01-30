@@ -1,5 +1,5 @@
 body {
-  border-top: 10px solid #b5152b;
+  border-top: 10px solid #c61826;
   padding-top: 50px;
 }
 
@@ -45,7 +45,7 @@ body {
 @media screen and (min-width: 769px) {
   #kss-node .kss-sidebar {
     margin-top: -10px;
-    border-top: 10px solid #b5152b;
+    border-top: 10px solid #c61826;
   }
 }
 

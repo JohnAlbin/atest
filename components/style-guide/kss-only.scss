@@ -7,7 +7,7 @@
 // options.styleGuide.css object in gulpfile.js.
 
 body {
-  border-top: 10px solid #b5152b;
+  border-top: 10px solid color(red-dark);
   padding-top: 50px;
 }
 
@@ -46,7 +46,7 @@ body {
 
   @media screen and (min-width: 769px) {
     margin-top: -10px;
-    border-top: 10px solid #b5152b;
+    border-top: 10px solid color(red-dark);
   }
 }
 
