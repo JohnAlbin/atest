@@ -38,6 +38,7 @@ options.theme = {
 options.theme.cssURL = path.relative(options.rootPath.styleGuide, options.theme.css) + '/';
 options.theme.jsURL = path.relative(options.rootPath.styleGuide, options.theme.js) + '/';
 options.theme.vendorURL = path.relative(options.rootPath.styleGuide, options.theme.vendor) + '/';
+// Override for GitHub docs.
 options.theme.cssURL = path.relative(__dirname, options.theme.css) + '/';
 options.theme.jsURL = path.relative(__dirname, options.theme.js) + '/';
 options.theme.vendorURL = path.relative(__dirname, options.theme.vendor) + '/';
