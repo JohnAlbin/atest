@@ -1,0 +1,81 @@
+// sass-lint:disable no-ids, no-url-domains, no-url-protocols, no-color-hex
+
+@import 'init';
+
+// This file is used to add styles to the style guide and is not included in
+// the Drupal site. It gets included by the style guide by adding it to the
+// options.styleGuide.css object in gulpfile.js.
+
+body {
+  border-top: 10px solid #b5152b;
+  padding-top: 50px;
+}
+
+.kss-style,
+.kss-style h1,
+.kss-style h2,
+.kss-style h3,
+.kss-style h4,
+.kss-style h5,
+.kss-style h6 {
+  font-family: Roboto, Verdana, Tahoma, 'DejaVu Sans', sans-serif;
+}
+
+// Add an outline to every grid item in the style guide.
+[id^='kssref-layouts-'] [class^='layout-'][class*='__'] {
+  outline: 1px dotted color('grey-light');
+}
+
+// Because our grids assume a container has some padding, add the standard
+// padding to the example wrapper.
+#kssref-layouts-layout-3column .kss-modifier__example {
+  @include zen-apply-gutter-padding();
+
+  @include zen-respond-to(m) {
+    @include zen-apply-gutter-padding();
+  }
+}
+
+#kss-node .kss-section {
+  max-width: none;
+}
+
+#kss-node .kss-sidebar {
+  background: none;
+  box-shadow: none;
+  margin-top: -10px;
+  border-top: 10px solid #b5152b;
+}
+
+#kss-node .kss-header {
+  margin: 0;
+  background-image: url('//www.uni-heidelberg.de/md/zentral/startseite/logo_neu_204x107.jpg');
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  padding-top: 127px;
+}
+
+
+#kssref-colors-colors .chroma-kss + .chroma-kss__title,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * {
+  display: none;
+}

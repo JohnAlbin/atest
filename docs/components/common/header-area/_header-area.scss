@@ -1,0 +1,56 @@
+// Header area
+//
+// The header area is the main article on the page.
+//
+// .header-area--with-image - Header area with image
+//
+// Markup: header-area.twig
+//
+// Style guide: common.header-area
+
+.header-area {
+
+  &__heading {
+    font-size: 130px;
+    line-height: 125px;
+    font-weight: bold;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+  }
+
+  &__image {
+    display: none;
+    float: right;
+    top: 0;
+    right: 0;
+    width: 510px;
+    margin-left: 47px;
+  }
+
+  &__text {
+    margin-left: 91px;
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  // Variation with image.
+  &--with-image {
+    min-height: 900px;
+  }
+
+  &--with-image &__heading {
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+  }
+
+  &--with-image &__image {
+    display: block;
+  }
+
+  &--with-image &__text {
+    clear: left;
+  }
+}

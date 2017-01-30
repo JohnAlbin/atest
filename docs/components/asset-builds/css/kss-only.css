@@ -1,0 +1,77 @@
+body {
+  border-top: 10px solid #b5152b;
+  padding-top: 50px;
+}
+
+.kss-style,
+.kss-style h1,
+.kss-style h2,
+.kss-style h3,
+.kss-style h4,
+.kss-style h5,
+.kss-style h6 {
+  font-family: Roboto, Verdana, Tahoma, 'DejaVu Sans', sans-serif;
+}
+
+[id^='kssref-layouts-'] [class^='layout-'][class*='__'] {
+  outline: 1px dotted #d6d6d6;
+}
+
+#kssref-layouts-layout-3column .kss-modifier__example {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 777px) {
+  #kssref-layouts-layout-3column .kss-modifier__example {
+    padding-left: 12px;
+    padding-right: 13px;
+  }
+  [dir="rtl"] #kssref-layouts-layout-3column .kss-modifier__example {
+    padding-left: 13px;
+    padding-right: 12px;
+  }
+}
+
+#kss-node .kss-section {
+  max-width: none;
+}
+
+#kss-node .kss-sidebar {
+  background: none;
+  box-shadow: none;
+  margin-top: -10px;
+  border-top: 10px solid #b5152b;
+}
+
+#kss-node .kss-header {
+  margin: 0;
+  background-image: url("//www.uni-heidelberg.de/md/zentral/startseite/logo_neu_204x107.jpg");
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  padding-top: 127px;
+}
+
+#kssref-colors-colors .chroma-kss + .chroma-kss__title,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + *,
+#kssref-colors-colors .chroma-kss + .chroma-kss__title + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * {
+  display: none;
+}

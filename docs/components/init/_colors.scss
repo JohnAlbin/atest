@@ -1,0 +1,66 @@
+// sass-lint:disable indentation, no-color-keywords, no-color-hex
+
+// Colors
+//
+// Use the `color()` function to add colors to CSS properties. To learn more,
+// [read the Chroma documentation](http://johnalbin.github.io/chroma/).
+//
+// Markup: chroma.twig
+//
+// Weight: -1
+//
+// Style guide: colors.colors
+
+// Define the default color scheme's color names.
+$chroma: define-default-color-scheme('branding', 'The site\'s main colors. Can be used to define colors in other color schemes.');
+
+$chroma: add-colors((
+  red:                    #e92a39,
+  red-dark:               #c61826,
+  maroon:                 #6d140e,
+  maroon-dark:            #59100a,
+  green:                  #0eb992,
+  green-dark:             #009d79,
+
+  black:                  #222,
+  grey-dark:              #2a2a2a,
+  //'grey':                 ('black' lighten 60%), // #999
+  grey-light:             #d6d6d6,
+  grey-extra-light:       #f3f3f3,
+  white:                  #fff,
+));
+
+// Define color names for functional uses.
+$chroma: define-color-scheme('functional', 'Colors used by functional parts of the design.');
+$chroma: add-colors('functional', (
+  // Colors used in the main content area.
+  text:                   'black',
+  text-bg:                'white',
+
+  link:                   'red',
+  link-visited:           'red',
+  link-active:            'red-dark',
+
+  border:                 'grey-light',
+
+  body-bg:                'text-bg',
+
+  button:                 'white',
+  button-bg:              'red',
+  button-disabled:        'grey-light',
+  button-secondary:       'text',
+  button-secondary-bg:    'white',
+
+  footer-fat-bg:          #292929, // 96% opaque black
+
+  mark-bg:                yellow,
+
+  progress-bar:           'red',
+  progress-bar-bg:        'grey-light',
+  progress-bar-border:    'grey-dark',
+
+  skip-link:              'white',
+  skip-link-bg:           'grey-dark',
+));
+
+$chroma-active-scheme: 'functional';

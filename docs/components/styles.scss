@@ -1,0 +1,146 @@
+//
+// The major stylesheet for this project.
+//
+// We categorize our components by creating headings in this file. See the
+// description on the style guide home page for more information.
+
+
+// Colors and Fonts
+//
+// Documentation for colors and fonts.
+//
+// Weight: -1
+//
+// Style guide: colors
+
+// Sass Code
+//
+// Documentation for Sass mixins and variables.
+//
+// Weight: 10
+//
+// Style guide: code
+@import 'init';
+
+// File organization
+//
+// Design components are reusable designs that can be applied using just the CSS class names specified in the component. We categorize our components to make them easy to find.
+//
+// <dl>
+// <dt>**Global**</dt>
+// <dd>`components/global` — Global components are design components that appear on all pages of the site, e.g. navigation components.</dd>
+// <dt>**Navigation**</dt>
+// <dd>`components/navigation` — Navigation components are specialized design components that are applied to website navigation.</dd>
+// <dt>**Common**</dt>
+// <dd>`components/common` — Miscellaneous components are grouped together, but feel free to further categorize these.</dd>
+// <dt>**Layouts**</dt>
+// <dd>`components/layouts` — Layout components position major chunks of the page. They just apply positioning, no other styles.</dd>
+// <dt>**Forms**</dt>
+// <dd>`components/forms` — Form components are specialized design components that are applied to forms or form elements.</dd>
+// <dt>**Utility**</dt>
+// <dd>`components/utility` — Utility components are specialized components that are often used to easily fix complex CSS problems.</dd>
+// <dt>**HTML Defaults**</dt>
+// <dd>`components/base` — The “base components” are CSS styles that only apply to HTML elements. Since all of the rulesets in this class of styles are HTML elements, the styles apply automatically.</dd>
+// </dl>
+//
+// In addition to the components, our component library also contains these folders:
+//
+// <dl>
+// <dt>**Sass**</dt>
+// <dd>`components/init` — This Sass includes various Sass variables, functions and mixins and also initializes everything we need for all other Sass files: variables, 3rd-party libraries, custom mixins and custom functions.</dd>
+// <dt>**Build files**</dt>
+// <dd>`components/asset-builds` — Files that are auto-generated from source files, e.g. minimized CSS files and minimized JS files.</dd>
+// <dt>**Style guide helper files**</dt>
+// <dd>`components/style-guide` — files needed to build this automated style guide; includes some CSS overrides for the default KSS style guide</dd>
+// </dl>
+//
+// Weight: -2
+//
+// Style guide: code.organization
+
+
+// HTML Defaults
+//
+// These are the default styles applied to HTML elements.
+//
+// Component classes can override these styles, but if no class applies a style
+// to an HTML element, these styles will be the ones displayed.
+//
+// Weight: 10
+//
+// Style guide: base
+
+// Ensure fonts get loaded first to minimize front-end performance impact.
+@import 'base/fonts';
+@import 'base/normalize';
+
+// Layouts
+//
+// The layout styling for major parts of the page that are included with the
+// theme.
+//
+// Weight: 1
+//
+// Style guide: layouts
+@import 'layouts/layout-3col/layout-3col';
+@import 'layouts/layout-center/layout-center';
+@import 'layouts/layout-swap/layout-swap';
+
+// Global
+//
+// Global components are design components that appear on all pages of the site.
+//
+// Style guide: global
+
+@import 'global/header/header';
+
+// Navigation
+//
+// Navigation components are specialized design components that are used for
+// site and page navigation.
+//
+// Style guide: global.navigation
+
+@import 'navigation/breadcrumb/breadcrumb';
+@import 'navigation/navbar/navbar';
+@import 'navigation/skip-link/skip-link';
+
+// Common
+//
+// Design components are reusable designs that can be applied using just the CSS
+// class names specified in the component.
+//
+// Weight: 1
+//
+// Style guide: common
+
+@import 'common/header-area/header-area';
+
+
+// Forms
+//
+// Form components are specialized design components that are applied to forms
+// or form elements.
+//
+// Weight: 2
+//
+// Style guide: forms
+
+// This file is @import'ed by base/forms, so we don't import it again.
+// @import 'forms/button/button';
+@import 'forms/progress-bar/progress-bar';
+
+// Utility
+//
+// Utility components are specialized components that are often used to easily
+// fix complex CSS problems.
+//
+// Weight: 9
+//
+// Style guide: utility
+
+@import 'utility/clearfix/clearfix';
+@import 'utility/inline-sibling/inline-sibling';
+@import 'utility/print-none/print-none';
+@import 'utility/responsive-video/responsive-video';
+@import 'utility/visually-hidden/visually-hidden';
